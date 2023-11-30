@@ -11,7 +11,6 @@ from scipy.ndimage.filters import gaussian_filter
 from scipy.interpolate import interp1d
 import util.boxutil as boxutil
 
-
 def Vein_SWIR_Threshold(SWIR_dir, vein_mask, tubeID, min_area=100):
     '''Function that loads the 1900 depth wavelength feature pickle generated from and
         thresholds the gnerated mask by unet for for vein detection by overlaping the detected veins and their hyperspectral values.
