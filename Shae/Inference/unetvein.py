@@ -11,7 +11,7 @@ import re
 import logging
 import os
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, UpSampling2D, concatenate, Concatenate, Conv2DTranspose, Dropout
+from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Conv2DTranspose, UpSampling2D, concatenate, Dropout, Dense, GlobalAveragePooling2D, Multiply, Reshape, BatchNormalization, Activation
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.losses import BinaryCrossentropy
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -26,7 +26,6 @@ from sklearn.model_selection import KFold
 from keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import EarlyStopping, LearningRateScheduler
 from keras.preprocessing.image import ImageDataGenerator
-from tensorflow.keras.layers import Input, Conv2D, MaxPooling2D, Conv2DTranspose, concatenate, Dropout, Dense, GlobalAveragePooling2D, Multiply, Reshape, BatchNormalization, Activation
 from tensorflow.keras.models import Model
 from keras import backend as K
 
